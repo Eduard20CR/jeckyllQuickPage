@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Jeckyll</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <div>
+        <a href="https://banners.stage-05.havashps.com/banners-quick-start/index.html" target="_self">Banner Quick Start</a>
+      </div>
+      <div>
+        <a class="active" href="https://banners.stage-05.havashps.com/isi-quick-start/index.html" target="_self">ISI Quick Start</a>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="container__row">
+          <div class="container__tittle">
+            <h1>Quick Jeckyll</h1>
+            <p>Coloca el nombre de la imagenes separados por espacios</p>
+          </div>
+          <div class="container__inputArea">
+            <textarea
+              name=""
+              id="main"
+              rows="10"
+              placeholder="Ejemplo: 
+What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+It was popularised in the 1960s with the release of Letraset sheets containing. 
+Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            ></textarea>
+          </div>
+          <div class="container__pils">
+            <h2>Options</h2>
+            <div id="container__setings" class="container__setings">
+              <div class="container__setingsItem">
+                <label for="layout">Layout</label>
+                <select id="layout" name="layout">
+                  <option value="article" selected>Article</option>
+                </select>
+              </div>
+              <div class="container__setingsItem">
+                <label for="direction">Direction</label>
+                <select id="direction" name="direction">
+                  <option value="rtl" selected>rtl</option>
+                  <option value="ltr">ltr</option>
+                  <option value="auto">auto</option>
+                  <option value="">Empty</option>
+                </select>
+              </div>
+              <div class="container__setingsItem">
+                <label for="language">Language</label>
+                <select id="language" name="language">
+                  <option value="en" selected>en</option>
+                  <option value="ar">ar</option>
+                  <option value="">Empty</option>
+                </select>
+              </div>
+              <div class="container__setingsItem">
+                <label for="slideshow">Is Slideshow</label>
+                <select id="slideshow" name="slideshow">
+                  <option value="true" selected>Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+              <div class="container__setingsItem">
+                <label for="order">Order</label>
+                <input type="number" name="order" id="order" placeholder="Order" />
+              </div>
+            </div>
+            <button id="btnSubmit">Transform</button>
+          </div>
+          <hr />
+
+          <div class="container__result">
+            <h2>Result</h2>
+            <div class="container__resultInputContainer">
+              <div class="container__resultItem container__resultItem--js">
+                <label for="markdown">Markdown</label>
+                <textarea name="" id="markdown" rows="10"></textarea>
+                <button id="btnHtml">copy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
